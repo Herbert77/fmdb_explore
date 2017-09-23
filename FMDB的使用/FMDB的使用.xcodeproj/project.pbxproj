@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		19237E871F6A276600B0151D /* ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 19237E861F6A276600B0151D /* ZXPUnicode.m */; };
+		1934829D1F6D091E00D39302 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1934829E1F6D091E00D39302 /* libFMDB.a */; };
 		197DC0341F64E57600D9A7C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC0331F64E57600D9A7C6 /* main.m */; };
 		197DC0371F64E57600D9A7C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC0361F64E57600D9A7C6 /* AppDelegate.m */; };
 		197DC03A1F64E57600D9A7C6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DC0391F64E57600D9A7C6 /* ViewController.m */; };
@@ -28,6 +29,7 @@
 		05E749B7EEF1FC0D28284CBF /* Pods-FMDB的使用.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FMDB的使用.release.xcconfig"; path = "Pods/Target Support Files/Pods-FMDB的使用/Pods-FMDB的使用.release.xcconfig"; sourceTree = "<group>"; };
 		19237E851F6A276600B0151D /* ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPUnicode.h; sourceTree = "<group>"; };
 		19237E861F6A276600B0151D /* ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPUnicode.m; sourceTree = "<group>"; };
+		1934829E1F6D091E00D39302 /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		197DC02F1F64E57600D9A7C6 /* FMDB的使用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FMDB的使用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		197DC0331F64E57600D9A7C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		197DC0351F64E57600D9A7C6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1934829D1F6D091E00D39302 /* libFMDB.a in Frameworks */,
 				197DC04A1F64E74F00D9A7C6 /* libsqlite3.0.tbd in Frameworks */,
 				930BD7BEF6455A547E8D51FF /* libPods-FMDB的使用.a in Frameworks */,
 			);
@@ -142,6 +145,7 @@
 		686140090B1DE8D255049B9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1934829E1F6D091E00D39302 /* libFMDB.a */,
 				197DC0491F64E74F00D9A7C6 /* libsqlite3.0.tbd */,
 				01C85034E7FFE2290D6D8693 /* libPods-FMDB的使用.a */,
 			);
@@ -186,7 +190,7 @@
 		197DC0271F64E57600D9A7C6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Herbert Hu";
 				TargetAttributes = {
 					197DC02E1F64E57600D9A7C6 = {
@@ -326,7 +330,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -334,7 +340,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -374,7 +384,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -382,7 +394,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
